@@ -3,7 +3,7 @@ package example
 import example.domain.{Order, User}
 import example.service.{OrderService, UserService}
 
-object InMemoryMain {
+object InMemoryRunner {
 
   // Allows us use for comprehension to flatMap over a generic effect (given a Monad implementation)
   import cats.syntax.flatMap._

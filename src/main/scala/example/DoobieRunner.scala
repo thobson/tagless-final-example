@@ -8,7 +8,7 @@ import example.interpreters.doobie.{DoobieOrderRepository, DoobieUserRepository}
 import example.service.{OrderService, UserService}
 import monix.eval.Task
 
-object DoobieMain {
+object DoobieRunner {
 
   import monix.execution.Scheduler.Implicits.global
   import scala.concurrent.duration._
