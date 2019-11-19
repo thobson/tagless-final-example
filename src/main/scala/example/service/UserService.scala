@@ -1,7 +1,7 @@
 package example.service
 
-import example.domain.User
 import example.algebras.UserRepository
+import example.domain.User
 
 object UserService {
 

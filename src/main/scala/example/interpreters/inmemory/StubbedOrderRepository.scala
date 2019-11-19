@@ -1,13 +1,14 @@
 package example.interpreters.inmemory
 
 import cats.Id
-import example.domain.Order
 import example.algebras.OrderRepository
+import example.domain.Order
 
 import scala.collection.concurrent.TrieMap
 
 object StubbedOrderRepository extends OrderRepository[Id] {
 
+  // Concurrent hash map
   val orders = TrieMap.empty[Long, Order]
 
   override def get(id: Long): Id[Option[Order]] = orders.get(id)
